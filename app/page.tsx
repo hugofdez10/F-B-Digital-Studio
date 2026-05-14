@@ -208,6 +208,7 @@ const team = [
     name: "Hugo Fernández",
     role: "Ingeniería informática · Desarrollo web",
     image: "/team/hugo-fernandez-web.jpg",
+    origin: "Santander",
     description:
       "Se encarga de la parte técnica: código, desarrollo web y creación de soluciones digitales modernas, rápidas y bien construidas.",
     icon: Code2,
@@ -216,6 +217,7 @@ const team = [
     name: "Mateo Blanco",
     role: "ADE · Estrategia comercial",
     image: "/team/mateo-web.jpg",
+    origin: "Valencia",
     description:
       "Lidera la parte comercial: contacto con clientes, detección de necesidades y puesta en común de ideas para convertirlas en soluciones claras.",
     icon: Bot,
@@ -810,7 +812,7 @@ function TeamSection() {
                     Nos conocimos en Canadá durante un programa de intercambio. Años después, seguimos en contacto y encontramos una oportunidad clara: unir formación, experiencia y visión digital para crear soluciones útiles para negocios locales.
                   </p>
                   <p>
-                    Hugo, ingeniero informático, lidera el desarrollo web y la parte técnica. Mateo, formado en ADE, se centra en la relación con clientes, la lectura comercial del negocio y la definición de ideas que merecen convertirse en sistemas.
+                    Con raíces en Santander y Valencia, combinamos dos perfiles complementarios. Hugo, ingeniero informático, lidera el desarrollo web y la parte técnica. Mateo, formado en ADE, se centra en la relación con clientes, la lectura comercial del negocio y la definición de ideas que merecen convertirse en sistemas.
                   </p>
                 </div>
               </div>
@@ -868,6 +870,9 @@ function TeamSection() {
                     </h3>
                     <p className="mt-4 text-[11px] font-semibold uppercase tracking-[0.2em] text-emerald-200/90">
                       {person.role}
+                    </p>
+                    <p className="mt-3 text-[11px] font-medium uppercase tracking-[0.18em] text-white/45">
+                      raíces · {person.origin}
                     </p>
                     <p className="mt-4 max-w-xl text-sm leading-6 text-white/70">
                       {person.description}
