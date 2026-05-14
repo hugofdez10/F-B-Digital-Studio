@@ -208,7 +208,7 @@ const team = [
     name: "Hugo Fernández",
     role: "Ingeniería informática · Desarrollo web",
     image: "/team/hugo-fernandez-web.jpg",
-    origin: "Santander",
+    origin: "Santanderino",
     description:
       "Se encarga de la parte técnica: código, desarrollo web y creación de soluciones digitales modernas, rápidas y bien construidas.",
     icon: Code2,
@@ -217,7 +217,7 @@ const team = [
     name: "Mateo Blanco",
     role: "ADE · Estrategia comercial",
     image: "/team/mateo-web.jpg",
-    origin: "Valencia",
+    origin: "Valenciano",
     description:
       "Lidera la parte comercial: contacto con clientes, detección de necesidades y puesta en común de ideas para convertirlas en soluciones claras.",
     icon: Bot,
@@ -872,7 +872,7 @@ function TeamSection() {
                       {person.role}
                     </p>
                     <p className="mt-3 text-[11px] font-medium uppercase tracking-[0.18em] text-white/45">
-                      raíces · {person.origin}
+                      {person.origin}
                     </p>
                     <p className="mt-4 max-w-xl text-sm leading-6 text-white/70">
                       {person.description}
