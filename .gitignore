@@ -1,10 +1,38 @@
-node_modules
-.next
-out
-dist
-.env*.local
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+dist/
+.vercel/
+
+# production
+build/
+
+# environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.local.example
+
+# logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-next-dev*.log
+
+# test and coverage output
+coverage/
+.nyc_output/
+
+# typescript
+*.tsbuildinfo
+
+# os and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json

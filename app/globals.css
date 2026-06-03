@@ -34,21 +34,10 @@ body::before {
   z-index: -2;
   content: "";
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
-  background-size: 72px 72px;
-  mask-image: linear-gradient(to bottom, black, transparent 82%);
-}
-
-body::after {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  content: "";
-  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 0.7px, transparent 0.7px);
-  background-size: 4px 4px;
-  opacity: 0.12;
+    linear-gradient(rgba(255, 255, 255, 0.026) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.026) 1px, transparent 1px);
+  background-size: 88px 88px;
+  mask-image: linear-gradient(to bottom, black, transparent 74%);
 }
 
 ::selection {
@@ -59,12 +48,6 @@ body::after {
 a,
 button {
   -webkit-tap-highlight-color: transparent;
-}
-
-section,
-footer {
-  content-visibility: auto;
-  contain-intrinsic-size: auto 900px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -88,7 +71,7 @@ footer {
   }
 
   .panel {
-    @apply border border-white/10 bg-white/[0.035] shadow-card backdrop-blur-xl;
+    @apply border border-white/10 bg-white/[0.045] shadow-card;
   }
 
   .section-band {
