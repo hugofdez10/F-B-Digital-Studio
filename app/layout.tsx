@@ -8,9 +8,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "F&B Digital Studio | Presencia digital premium para negocios locales",
+  title: "F&B Digital Studio | Diseño web, branding y sistemas digitales",
   description:
-    "Diseño web, Google Business Profile, automatización simple y sistemas QR/NFC para negocios locales.",
+    "F&B Digital Studio crea webs premium, branding, ecommerce, automatizaciones, SEO e integraciones con IA para empresas ambiciosas.",
 };
 
 export default function RootLayout({

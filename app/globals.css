@@ -20,11 +20,12 @@ body {
   min-height: 100vh;
   margin: 0;
   background:
-    radial-gradient(circle at 20% 8%, rgba(76, 141, 255, 0.12), transparent 30rem),
-    radial-gradient(circle at 88% 18%, rgba(143, 107, 255, 0.11), transparent 28rem),
-    linear-gradient(180deg, #05070d 0%, #070a12 46%, #05070d 100%);
+    linear-gradient(120deg, rgba(76, 141, 255, 0.08), transparent 28%),
+    linear-gradient(245deg, rgba(143, 107, 255, 0.08), transparent 34%),
+    linear-gradient(180deg, #05070d 0%, #070a12 42%, #05070d 100%);
   color: #f4f7fb;
   font-family: var(--font-inter), Inter, system-ui, sans-serif;
+  text-rendering: geometricPrecision;
 }
 
 body::before {
@@ -36,7 +37,7 @@ body::before {
     linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
   background-size: 72px 72px;
-  mask-image: linear-gradient(to bottom, black, transparent 80%);
+  mask-image: linear-gradient(to bottom, black, transparent 82%);
 }
 
 body::after {
@@ -47,18 +48,23 @@ body::after {
   content: "";
   background-image: radial-gradient(rgba(255, 255, 255, 0.08) 0.7px, transparent 0.7px);
   background-size: 4px 4px;
-  opacity: 0.13;
+  opacity: 0.12;
 }
 
 ::selection {
-  background: rgba(112, 231, 255, 0.22);
+  background: rgba(112, 231, 255, 0.24);
   color: #ffffff;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
 }
 
 section,
 footer {
   content-visibility: auto;
-  contain-intrinsic-size: auto 860px;
+  contain-intrinsic-size: auto 900px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -78,11 +84,23 @@ footer {
 
 @layer components {
   .container-premium {
-    @apply mx-auto max-w-7xl px-6;
+    @apply mx-auto max-w-7xl px-6 sm:px-8;
   }
 
   .panel {
-    @apply border border-white/10 bg-white/[0.035] shadow-card;
+    @apply border border-white/10 bg-white/[0.035] shadow-card backdrop-blur-xl;
+  }
+
+  .section-band {
+    @apply border-y border-white/[0.06] bg-white/[0.018];
+  }
+
+  .section-eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.26em] text-cyanSoft/[0.85];
+  }
+
+  .social-link {
+    @apply inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/[0.12] bg-white/[0.04] text-white/70 transition hover:border-cyanSoft/[0.35] hover:text-white;
   }
 
   .text-balance {
